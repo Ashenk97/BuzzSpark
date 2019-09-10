@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="127dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/account1" />
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+
+        android:text="@string/edit_your_profile" />
+
+
+    <EditText
+        android:id="@+id/edittext_yname"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:hint="@string/your_name" />
+
+
+    <EditText
+        android:id="@+id/edittext_email"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:hint="E-mail" />
+
+    <Button
+        android:id="@+id/button_signOut1"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+
+        android:text="Back to Home" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.categoryview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ItemDetailView"></activity>
+        <activity android:name=".CategoryDetailedView" />
+        <activity android:name=".CategoryView">
+
+        </activity>
+
+        <activity android:name=".cart">
+
+        </activity>
+        <activity android:name=".Order_Review" />
+        <activity android:name=".payment_method" />
+        <activity android:name=".Order_Confirmation" />
+        <activity android:name=".shipping"></activity>
+
+        <activity android:name=".Account"></activity>
+        <activity android:name=".AccountDetails"></activity>
+        <activity android:name=".FeedBack"></activity>
+        <activity android:name=".register"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+   </manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountDetails"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="127dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/account"/>
+
+    <EditText
+        android:id="@+id/edittext_displayname"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/display_name" />
+
+    <EditText
+        android:id="@+id/edittext_birthday"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/bday" />
+
+    <EditText
+        android:id="@+id/edittext_location"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/location" />
+
+    <EditText
+        android:id="@+id/edittext_phone"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/mobile_phone" />
+
+    <EditText
+        android:id="@+id/edittext_gender"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/gender" />
+
+    <EditText
+        android:id="@+id/edittext_address"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/address" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:text="@string/save"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

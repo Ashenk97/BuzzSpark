@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order_Review">
+
+
+    <TextView
+        android:id="@+id/txtStep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Step 3 of 3"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Order Review"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStep2" />
+
+    <TextView
+        android:id="@+id/txtHolder"
+        android:layout_width="391dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Thank you for your payment. We have received your payment"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCart" />
+
+    <ImageView
+        android:id="@+id/rose"
+        android:layout_width="316dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/rose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHolder" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="387dp"
+        android:layout_height="44dp"
+        android:layout_gravity="left"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Dafen Chinese Art For Living Room Large Custom Handmade Oil Canvas Painting"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rose" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Total US $300"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress1" />
+
+    <TextView
+        android:id="@+id/txtAddress1"
+        android:layout_width="384dp"
+        android:layout_height="49dp"
+        android:layout_gravity="left"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Free Shipping via China Post Registered Air Mail Estimated Delivery Time:23-45 Days"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Back to Store"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnConfirm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="528dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Edit Card Details"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
