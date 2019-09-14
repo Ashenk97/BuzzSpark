@@ -26,17 +26,8 @@
     <string name="btn3">Add to cart</string>
     <string name="btn4">Message</string>
 
-    <string-array name="country">
-        <item>Sri Lanka</item>
-        <item>Canada</item>
-        <item>USA</item>
-        <item>UK</item>
-        <item>Japan</item>
-        <item>China</item>
-        <item>Australia</item>
-    </string-array>
-
     <string name="username">Username</string>
+
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="logiin">Login</string>
@@ -57,6 +48,15 @@
     <string name="location">Location</string>
     <string name="bday">Date of Birth</string>
     <string name="display_name">Display name</string>
+    <string-array name="country">
+        <item>Sri Lanka</item>
+        <item>Canada</item>
+        <item>USA</item>
+        <item>UK</item>
+        <item>Japan</item>
+        <item>China</item>
+        <item>Australia</item>
+    </string-array>
 
 
 </resources>
