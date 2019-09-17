@@ -53,5 +53,15 @@
         android:background="@drawable/buttonstyle"
         android:text="Register Here" />
 
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onclickHome"
+        android:text="@string/home_page"
+        android:textStyle="bold" />
+
 
 </LinearLayout>

@@ -9,24 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ItemDetailView"></activity>
+        <activity android:name=".HomePage"></activity>
+        <activity android:name=".ItemDetailView" />
         <activity android:name=".CategoryDetailedView" />
-        <activity android:name=".CategoryView">
-
-        </activity>
-
-        <activity android:name=".cart">
-
-        </activity>
+        <activity android:name=".CategoryView"></activity>
+        <activity android:name=".cart"></activity>
         <activity android:name=".Order_Review" />
         <activity android:name=".payment_method" />
         <activity android:name=".Order_Confirmation" />
-        <activity android:name=".shipping"></activity>
-
-        <activity android:name=".Account"></activity>
-        <activity android:name=".AccountDetails"></activity>
-        <activity android:name=".FeedBack"></activity>
-        <activity android:name=".register"></activity>
+        <activity android:name=".shipping" />
+        <activity android:name=".Account" />
+        <activity android:name=".AccountDetails" />
+        <activity android:name=".FeedBack" />
+        <activity android:name=".register" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,7 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
-   </manifest>
+</manifest>
