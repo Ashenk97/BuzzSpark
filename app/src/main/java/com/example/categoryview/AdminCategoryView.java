@@ -6,40 +6,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-public class CategoryView extends AppCompatActivity {
+public class AdminCategoryView extends AppCompatActivity {
 
-    TextView category;
-    ImageView Paintings,Sculptures,Drawings,Photographs,Posters,Prints;
-    TextView Paintingstxt,Sculpturestxt,Drawingstxt,Photographstxt,Posterstxt,Printstxt;
+    private ImageView Paintings,Sculptures,Drawings,Photographs,Posters,Prints;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category_view);
+        setContentView(R.layout.activity_admin_category_view);
 
-        category = findViewById(R.id.textView);
-        category.setText(R.string.category);
+        Paintings = (ImageView) findViewById(R.id.Paintings_image);
+        Sculptures = (ImageView) findViewById(R.id.Sculptres);
+        Drawings = (ImageView) findViewById(R.id.Drawings_image);
+        Photographs = (ImageView) findViewById(R.id.Photographs_image);
+        Posters = (ImageView) findViewById(R.id.Posters_image);
+        Prints = (ImageView) findViewById(R.id.Prints_image);
 
-        Paintingstxt = findViewById(R.id.painting_txt);
-        Sculpturestxt = findViewById(R.id.sculpture_txt);
-        Drawingstxt = findViewById(R.id.drawing_txt);
-        Photographstxt = findViewById(R.id.photography_txt);
-        Posterstxt = findViewById(R.id.poster_txt);
-        Printstxt = findViewById(R.id.print_txt);;
-
-        Paintings = findViewById(R.id.Paintings_image);
-        Sculptures = findViewById(R.id.Sculputres_image);
-        Drawings = findViewById(R.id.Drawings_image);
-        Prints = findViewById(R.id.Prints_image);
-        Photographs = findViewById(R.id.Photographs_image);
-        Posters = findViewById(R.id.Posters_image);
 
         Paintings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                Intent intent = new Intent(AdminCategoryView.this,AdminAddProduct.class);
                 intent.putExtra("category", "Paintings");
                 startActivity(intent);
             }
@@ -48,7 +36,7 @@ public class CategoryView extends AppCompatActivity {
         Sculptures.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                Intent intent = new Intent(AdminCategoryView.this,AdminAddProduct.class);
                 intent.putExtra("category", "Sculptures");
                 startActivity(intent);
             }
@@ -57,7 +45,7 @@ public class CategoryView extends AppCompatActivity {
         Drawings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                Intent intent = new Intent(AdminCategoryView.this,AdminAddProduct.class);
                 intent.putExtra("category", "Drawings");
                 startActivity(intent);
             }
@@ -66,7 +54,7 @@ public class CategoryView extends AppCompatActivity {
         Photographs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                Intent intent = new Intent(AdminCategoryView.this,AdminAddProduct.class);
                 intent.putExtra("category", "Photographs");
                 startActivity(intent);
             }
@@ -75,7 +63,7 @@ public class CategoryView extends AppCompatActivity {
         Posters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                Intent intent = new Intent(AdminCategoryView.this,AdminAddProduct.class);
                 intent.putExtra("category", "Posters");
                 startActivity(intent);
             }
@@ -84,19 +72,10 @@ public class CategoryView extends AppCompatActivity {
         Prints.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                Intent intent = new Intent(AdminCategoryView.this,AdminAddProduct.class);
                 intent.putExtra("category", "Prints");
                 startActivity(intent);
             }
         });
-
     }
-
-    public void catDetailView(View view){
-        Intent intent01 = new Intent(CategoryView.this, ProductListView.class);
-        startActivity(intent01);
-
-    }
-
-
 }

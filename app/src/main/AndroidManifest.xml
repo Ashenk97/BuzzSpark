@@ -9,10 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminAddProduct"/>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AdminProductDashBoard" />
+        <activity android:name=".ProductDetailView" />
+        <activity android:name=".AdminMaintainProducts" />
+        <activity android:name=".ProductListView" />
+        <activity android:name=".AdminCategoryView" />
+        <activity android:name=".CategoryView" />
+        <activity android:name=".AdminAddProduct" />
         <activity android:name=".ItemDetailView" />
         <activity android:name=".CategoryDetailedView" />
-        <activity android:name=".CategoryView" />
         <activity android:name=".cart" />
         <activity android:name=".Order_Review" />
         <activity android:name=".payment_method" />
@@ -22,15 +29,14 @@
         <activity android:name=".AccountDetails" />
         <activity android:name=".FeedBack" />
         <activity android:name=".register" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".AdminCategoryView">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginHome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

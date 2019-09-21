@@ -9,11 +9,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="160dp"
-        android:layout_height="43dp"
+        android:layout_width="258dp"
+        android:layout_height="39dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
-        android:text="@string/category"
+        android:text="@string/add_new_product"
         android:textColor="@color/azur"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <ImageView
-        android:id="@+id/Sculputres_image"
+        android:id="@+id/Sculptres"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:clickable="true"
@@ -38,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.158" />
 
     <ImageView
         android:id="@+id/Posters_image"
@@ -54,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886" />
+        app:layout_constraintVertical_bias="0.843" />
 
     <ImageView
         android:id="@+id/Drawings_image"
@@ -69,8 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/Prints_image"
@@ -86,7 +85,7 @@
         app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintVertical_bias="0.843" />
 
     <ImageView
         android:id="@+id/Photographs_image"
@@ -99,8 +98,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/Paintings_image"
@@ -116,13 +114,14 @@
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.158" />
 
     <TextView
         android:id="@+id/painting_txt"
         android:layout_width="90dp"
         android:layout_height="29dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
@@ -131,19 +130,15 @@
         android:textColor="@color/purple"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/Drawings_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Paintings_image"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.415" />
 
     <TextView
         android:id="@+id/sculpture_txt"
         android:layout_width="107dp"
         android:layout_height="26dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="36dp"
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
@@ -153,16 +148,17 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/Photographs_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.745"
-        app:layout_constraintStart_toEndOf="@id/painting_txt"
-        app:layout_constraintTop_toBottomOf="@id/Sculputres_image"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/Sculptres"
+        app:layout_constraintVertical_bias="0.446" />
 
     <TextView
         android:id="@+id/drawing_txt"
         android:layout_width="76dp"
         android:layout_height="29dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
@@ -171,17 +167,14 @@
         android:textColor="@color/purple"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/Posters_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Drawings_image"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.191" />
 
     <TextView
         android:id="@+id/photography_txt"
         android:layout_width="108dp"
         android:layout_height="29dp"
-        android:layout_marginTop="16dp"
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
@@ -189,12 +182,12 @@
         android:text="@string/cat4"
         android:textColor="@color/purple"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/Prints_image"
+        app:layout_constraintBottom_toTopOf="@id/Posters_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toEndOf="@+id/drawing_txt"
         app:layout_constraintTop_toBottomOf="@id/Photographs_image"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.191" />
 
     <TextView
         android:id="@+id/print_txt"
@@ -209,15 +202,17 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toEndOf="@+id/poster_txt"
         app:layout_constraintTop_toBottomOf="@id/Prints_image"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.265" />
 
     <TextView
         android:id="@+id/poster_txt"
         android:layout_width="69dp"
         android:layout_height="27dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
@@ -226,10 +221,8 @@
         android:textColor="@color/purple"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Posters_image"
-        app:layout_constraintVertical_bias="0.219" />
+        app:layout_constraintVertical_bias="0.276" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
