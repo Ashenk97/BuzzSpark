@@ -25,11 +25,18 @@ public class ProductListView extends AppCompatActivity {
     private RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
     private String categoryID = "";
+    private String type = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_list_view);
+
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if(bundle!=null){
+            type = getIntent().getExtras().get("Admin").toString();
+        }
 
         categoryID = getIntent().getStringExtra("category");
 
@@ -54,23 +61,19 @@ public class ProductListView extends AppCompatActivity {
                         holder.txtProductPrice.setText("Price = Rs." + model.getPrice());
                         Picasso.get().load(model.getImage()).into(holder.imageView);
 
-
-//                        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//                            @Override
-//                            public void onClick(View view) {
-//                                Intent intent = new Intent(ProductListView.this,ProductDetailView.class);
-//                                intent.putExtra("pid",model.getPid());
-//                                startActivity(intent);
-
-//                            }
-//                        });
-                        //Admin View of Produtcs
                         holder.itemView.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Intent intent = new Intent(ProductListView.this,AdminMaintainProducts.class);
-                                intent.putExtra("pid",model.getPid());
-                                startActivity(intent);
+                                if (type.equals("Admin")) {
+                                    Intent intent = new Intent(ProductListView.this, AdminMaintainProducts.class);
+                                    intent.putExtra("pid", model.getPid());
+                                    startActivity(intent);
+                                }
+                                else{
+                                    Intent intent = new Intent(ProductListView.this,ProductDetailView.class);
+                                    intent.putExtra("pid",model.getPid());
+                                    startActivity(intent);
+                                }
 
                             }
                         });

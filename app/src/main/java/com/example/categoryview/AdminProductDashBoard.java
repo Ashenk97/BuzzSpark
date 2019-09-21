@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class AdminProductDashBoard extends AppCompatActivity {
 
-    Button addItembtn, Maintainbtn;
+    Button addItembtn, Maintainbtn, logoutBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,18 @@ public class AdminProductDashBoard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AdminProductDashBoard.this,ProductListView.class);
+                intent.putExtra("Admin","Admin");
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        logoutBtn = findViewById(R.id.logout_btn);
+
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminProductDashBoard.this,LoginActivity.class);
                 startActivity(intent);
             }
         });

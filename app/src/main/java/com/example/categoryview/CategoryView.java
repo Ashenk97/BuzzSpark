@@ -40,7 +40,6 @@ public class CategoryView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryView.this,ProductListView.class);
-                intent.putExtra("category", "Paintings");
                 startActivity(intent);
             }
         });
@@ -49,7 +48,6 @@ public class CategoryView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryView.this,ProductListView.class);
-                intent.putExtra("category", "Sculptures");
                 startActivity(intent);
             }
         });
@@ -58,7 +56,6 @@ public class CategoryView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryView.this,ProductListView.class);
-                intent.putExtra("category", "Drawings");
                 startActivity(intent);
             }
         });
@@ -67,7 +64,6 @@ public class CategoryView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryView.this,ProductListView.class);
-                intent.putExtra("category", "Photographs");
                 startActivity(intent);
             }
         });
@@ -76,7 +72,6 @@ public class CategoryView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryView.this,ProductListView.class);
-                intent.putExtra("category", "Posters");
                 startActivity(intent);
             }
         });
@@ -85,7 +80,6 @@ public class CategoryView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryView.this,ProductListView.class);
-                intent.putExtra("category", "Prints");
                 startActivity(intent);
             }
         });
