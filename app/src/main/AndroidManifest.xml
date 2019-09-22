@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".searchProduct"></activity>
+        <activity android:name=".ChatHome" />
+        <activity android:name=".Chat" />
+        <activity android:name=".HomePage" />
         <activity android:name=".AddAccountDetails"></activity>
         <activity android:name=".LoginHome" />
         <activity android:name=".RegisterActivity" />
@@ -40,5 +45,7 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
 </manifest>
