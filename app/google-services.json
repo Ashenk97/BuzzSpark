@@ -23,6 +23,7 @@
           }
         },
         {
+
           "client_id": "708516986505-id2nut8k03k3esmho2oo691cq7lfobai.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -87,6 +88,7 @@
           ]
         }
       }
+
     }
   ],
   "configuration_version": "1"

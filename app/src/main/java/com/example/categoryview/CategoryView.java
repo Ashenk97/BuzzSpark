@@ -5,18 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class CategoryView extends AppCompatActivity {
 
     TextView category;
-    TextView txt1;
-    TextView txt2;
-    TextView txt3;
-    TextView txt4;
-    TextView txt5;
-    TextView txt6;
+    ImageView Paintings,Sculptures,Drawings,Photographs,Posters,Prints;
+    TextView Paintingstxt,Sculpturestxt,Drawingstxt,Photographstxt,Posterstxt,Printstxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,35 +22,72 @@ public class CategoryView extends AppCompatActivity {
         category = findViewById(R.id.textView);
         category.setText(R.string.category);
 
-        txt1 = findViewById(R.id.textView2);
-        txt1.setText(R.string.cat1);
-        txt2 = findViewById(R.id.textView3);
-        txt2.setText(R.string.cat2);
-        txt3 = findViewById(R.id.textView4);
-        txt3.setText(R.string.cat3);
-        txt4 = findViewById(R.id.textView5);
-        txt4.setText(R.string.cat4);
-        txt5 = findViewById(R.id.textView7);
-        txt5.setText(R.string.cat5);
-        txt6 = findViewById(R.id.textView6);
-        txt6.setText(R.string.cat6);
+        Paintingstxt = findViewById(R.id.painting_txt);
+        Sculpturestxt = findViewById(R.id.sculpture_txt);
+        Drawingstxt = findViewById(R.id.drawing_txt);
+        Photographstxt = findViewById(R.id.photography_txt);
+        Posterstxt = findViewById(R.id.poster_txt);
+        Printstxt = findViewById(R.id.print_txt);;
 
-        Button btnHome=(Button) findViewById(R.id.button6);
-        btnHome.setOnClickListener(new View.OnClickListener() {
+        Paintings = findViewById(R.id.Paintings_image);
+        Sculptures = findViewById(R.id.Sculputres_image);
+        Drawings = findViewById(R.id.Drawings_image);
+        Prints = findViewById(R.id.Prints_image);
+        Photographs = findViewById(R.id.Photographs_image);
+        Posters = findViewById(R.id.Posters_image);
+
+        Paintings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //replace CategoryView -> HomeActivity
-                Intent intent=new Intent(CategoryView.this, Account.class);
+                Intent intent = new Intent(CategoryView.this,ProductListView.class);
                 startActivity(intent);
+            }
+        });
 
+        Sculptures.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                startActivity(intent);
+            }
+        });
 
+        Drawings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                startActivity(intent);
+            }
+        });
+
+        Photographs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                startActivity(intent);
+            }
+        });
+
+        Posters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                startActivity(intent);
+            }
+        });
+
+        Prints.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CategoryView.this,ProductListView.class);
+                startActivity(intent);
             }
         });
 
     }
 
     public void catDetailView(View view){
-        Intent intent01 = new Intent(CategoryView.this,CategoryDetailedView.class);
+        Intent intent01 = new Intent(CategoryView.this, ProductListView.class);
         startActivity(intent01);
 
     }
