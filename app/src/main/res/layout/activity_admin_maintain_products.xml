@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/product_image_maintain"
-            android:hint="Product Description"
+            android:hint="Product Name"
             android:textAlignment="center"
             android:layout_marginTop="2dp"
             android:background="@drawable/input_design"
@@ -54,6 +54,7 @@
             android:padding="12dp"
             android:layout_margin="5dp"
             android:textColor="@color/colorPrimaryDark"
+            android:inputType="number"
             />
 
         <EditText
