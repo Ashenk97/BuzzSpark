@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "708516986505",
+    "firebase_url": "https://buzzspark-e0e09.firebaseio.com",
+    "project_id": "buzzspark-e0e09",
+    "storage_bucket": "buzzspark-e0e09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708516986505:android:1bdbfd0d9d7afd718e5058",
+        "android_client_info": {
+          "package_name": "com.example.categoryview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708516986505-id2nut8k03k3esmho2oo691cq7lfobai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.categoryview",
+            "certificate_hash": "9c5176e1f20b0d5f01b688dea1239d734610511d"
+          }
+        },
+        {
+          "client_id": "708516986505-vd3ui1b52ijlvf3vnlh01lccc3rvasgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI2QifZkaeE28_P8C_pxVofXeSVmFS6XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708516986505-vd3ui1b52ijlvf3vnlh01lccc3rvasgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
