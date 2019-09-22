@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomePage"></activity>
+        <activity android:name=".searchProduct"></activity>
+        <activity android:name=".ChatHome" />
+        <activity android:name=".Chat" />
+        <activity android:name=".HomePage" />
         <activity android:name=".ItemDetailView" />
         <activity android:name=".CategoryDetailedView" />
-        <activity android:name=".CategoryView"></activity>
-        <activity android:name=".cart"></activity>
+        <activity android:name=".CategoryView" />
+        <activity android:name=".cart" />
         <activity android:name=".Order_Review" />
         <activity android:name=".payment_method" />
         <activity android:name=".Order_Confirmation" />
@@ -30,5 +33,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

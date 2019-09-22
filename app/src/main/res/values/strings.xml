@@ -50,6 +50,14 @@
     <string name="display_name">Display name</string>
     <string name="home_page">Home Page</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new">ADD NEW</string>
+    <string name="item_no">START CHAT ON ITEM NO</string>
+    <string name="send">SEND</string>
+    <string name="textview">TextView</string>
+    <string name="message">type your message here</string>
+    <string name="delete">DELETE</string>
+    <string name="hint">Long press on an chat item to delete all entries</string>
+    <string name="welcome_msg">Enter into a group chat on product or create one</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string-array name="country">

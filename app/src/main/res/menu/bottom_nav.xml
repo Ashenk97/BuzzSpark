@@ -17,9 +17,9 @@
         android:icon="@drawable/ic_action_cart"
         />
     <item
-        android:id="@+id/profile"
-        android:title="PROFILE"
-        android:icon="@drawable/ic_action_profile"
+        android:id="@+id/searchFunction"
+        android:title="SEARCH"
+        android:icon="@drawable/ic_search_black_24dp"
         />
     <item
         android:id="@+id/chat"
