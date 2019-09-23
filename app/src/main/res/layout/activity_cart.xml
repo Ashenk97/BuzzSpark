@@ -1,183 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cart">
+    tools:context=".CartActivity"
+>
 
-    <TextView
-        android:id="@+id/txtCart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Cart"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnDelete"
-        android:layout_width="52dp"
-        android:layout_height="53dp"
-        android:layout_gravity="left"
-        android:layout_marginEnd="16dp"
-
-        android:layout_marginRight="16dp"
-        android:background="@drawable/buttonstyle"
-        android:drawableEnd="@drawable/ic_action_delete"
-        android:text=""
-        android:textColor="@color/white"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtCart"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/btnHome"
-        android:layout_width="52dp"
-        android:layout_height="53dp"
-        android:layout_gravity="left"
-
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:background="@drawable/buttonstyle"
-        android:drawableEnd="@drawable/ic_action_home"
-        android:text=""
-        android:textColor="@color/white"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnDelete"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/rose"
-        android:layout_width="181dp"
-        android:layout_height="131dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:src="@drawable/rose"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxSeller" />
-
-    <TextView
-        android:id="@+id/txtDate"
-        android:layout_width="192dp"
-        android:layout_height="73dp"
-        android:layout_gravity="left"
-
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="144dp"
-        android:text="Dafen Chinese Art For Living Room Large Custom Handmade Oil Canvas Painting"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/rose"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="140dp"
-        android:text="US $300"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtQty"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/rose"
-        app:layout_constraintTop_toBottomOf="@+id/txtDate"
-        app:layout_constraintVertical_bias="1.0" />
-
+    <RelativeLayout
+        android:id="@+id/r111"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true">
 
         <TextView
-            android:id="@+id/textTot"
-            android:layout_width="133dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginEnd="260dp"
-            android:layout_marginBottom="24dp"
-            android:text="Total US $300"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-
-        <Button
-            android:id="@+id/btnBuy"
-            android:layout_width="wrap_content"
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/buttonstyle"
-            android:text="Buy"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="689dp"
+            android:text="Total Price = "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"></TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next_process_btn"
+        android:layout_below="@+id/r111"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
 
     <Button
-        android:id="@+id/btnin"
-        android:layout_width="22dp"
-        android:layout_height="24dp"
-        android:layout_gravity="left"
-        android:layout_marginStart="210dp"
-        android:background="@drawable/incresedecrease"
-        android:text="-"
-        android:textColor="@color/white"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtQty"
-        app:layout_constraintEnd_toStartOf="@+id/txtQty"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btndec"
-        android:layout_width="22dp"
-        android:layout_height="24dp"
-        android:layout_gravity="left"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="120dp"
-        android:background="@drawable/incresedecrease"
-        android:text="+"
-        android:textColor="@color/white"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtQty"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtQty" />
-
-    <TextView
-        android:id="@+id/txtQty"
-        android:layout_width="25dp"
-        android:layout_height="28dp"
-        android:layout_gravity="left"
-        android:layout_marginTop="240dp"
-        android:layout_marginBottom="443dp"
-        android:paddingLeft="5dp"
-        android:paddingTop="0dp"
-        android:paddingRight="5dp"
-        android:text="1"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btndec"
-        app:layout_constraintStart_toEndOf="@+id/btnin"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <CheckBox
-        android:id="@+id/checkBoxSeller"
-        android:layout_width="wrap_content"
+        android:id="@+id/next_process_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:background="#D8D8D8"
-        android:paddingRight="4dp"
-        android:text="Seller: Trade Assurance"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCart" />
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Next"
+        android:textColor="@android:color/white"
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="20dp"></Button>
+
+
+
+
+</RelativeLayout>
+

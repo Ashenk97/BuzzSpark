@@ -104,10 +104,6 @@ public class AdminAddProduct extends AppCompatActivity {
         {
             Toast.makeText(this, "Product Image is mandatory.",Toast.LENGTH_SHORT).show();
         }
-        else if (TextUtils.isEmpty(Pname))
-        {
-            Toast.makeText(this, "Please Enter Product Name.",Toast.LENGTH_SHORT).show();
-        }
         else if (TextUtils.isEmpty(Description))
         {
             Toast.makeText(this, "Please Enter Product Description.",Toast.LENGTH_SHORT).show();
@@ -116,7 +112,10 @@ public class AdminAddProduct extends AppCompatActivity {
         {
             Toast.makeText(this, "Please Enter Product Price.",Toast.LENGTH_SHORT).show();
         }
-
+        else if (TextUtils.isEmpty(Pname))
+        {
+            Toast.makeText(this, "Please Enter Product Name.",Toast.LENGTH_SHORT).show();
+        }
         else
         {
             StoreImageInformation();

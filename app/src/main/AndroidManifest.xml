@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddAccountDetails"></activity>
-        <activity android:name=".LoginHome" />
+        <activity android:name=".ProfileDash"></activity>
+        <activity android:name=".AccountMaintain" />
+        <activity android:name=".AddAccountDetails" />
+        <activity android:name=".OrderSuccessfullActivity" />
+        <activity android:name=".ConfirmFinalOrderActivity" />
+        <activity android:name=".CartActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".AdminProductDashBoard" />
@@ -20,19 +24,12 @@
         <activity android:name=".AdminCategoryView" />
         <activity android:name=".CategoryView" />
         <activity android:name=".AdminAddProduct" />
-        <activity android:name=".ItemDetailView" />
+        <activity android:name=".searchProduct" />
+        <activity android:name=".ChatHome" />
+        <activity android:name=".Chat" />
+        <activity android:name=".HomePage" />
         <activity android:name=".CategoryDetailedView" />
-        <activity android:name=".cart" />
-        <activity android:name=".Order_Review" />
-        <activity android:name=".payment_method" />
-        <activity android:name=".Order_Confirmation" />
-        <activity android:name=".shipping" />
-        <activity android:name=".Account" />
-        <activity android:name=".AccountDetails" />
-        <activity android:name=".FeedBack" />
-        <activity android:name=".register" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".AccountMaintain">
+        <activity android:name=".LoginHome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

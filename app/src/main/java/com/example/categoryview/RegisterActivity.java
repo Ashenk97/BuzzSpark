@@ -35,6 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register2);
 
+
         CreateAccountButton = (Button) findViewById(R.id.register_btn);
         InputName = (EditText) findViewById(R.id.register_Name_input);
         InputPassword = (EditText) findViewById(R.id.register_password_input);
@@ -61,15 +62,15 @@ public class RegisterActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(name))
         {
-            Toast.makeText(this, "Please Enter your Name...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please write your name...", Toast.LENGTH_SHORT).show();
         }
         else if (TextUtils.isEmpty(phone))
         {
-            Toast.makeText(this, "Please Enter your Phone number...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please write your phone number...", Toast.LENGTH_SHORT).show();
         }
         else if (TextUtils.isEmpty(password))
         {
-            Toast.makeText(this, "Please Enter your Password...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please write your password...", Toast.LENGTH_SHORT).show();
         }
         else
         {

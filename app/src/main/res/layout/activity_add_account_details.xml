@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <ImageView
         android:id="@+id/profile_pic"
@@ -53,8 +53,8 @@
         android:id="@+id/birthday"
         android:layout_width="271dp"
         android:layout_height="48dp"
-        android:ems="10"
         android:background="@drawable/input_design"
+        android:ems="10"
         android:gravity="center"
         android:hint="Enter your birthday"
         android:inputType="date"
@@ -62,22 +62,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name_txt"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.059" />
 
     <EditText
         android:id="@+id/address"
         android:layout_width="267dp"
         android:layout_height="52dp"
-        android:ems="10"
-        android:hint="Address"
         android:background="@drawable/input_design"
+        android:ems="10"
         android:gravity="center"
+        android:hint="Address"
         android:inputType="textPostalAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/birthday"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.046" />
 
     <EditText
         android:id="@+id/phone"
@@ -93,7 +94,7 @@
         app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/address"
-        app:layout_constraintVertical_bias="0.154" />
+        app:layout_constraintVertical_bias="0.064" />
 
     <EditText
         android:id="@+id/gender"
@@ -110,7 +111,7 @@
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone"
-        app:layout_constraintVertical_bias="0.224" />
+        app:layout_constraintVertical_bias="0.096" />
 
     <Button
         android:id="@+id/save"
@@ -123,6 +124,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/gender" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

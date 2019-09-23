@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <ImageView
         android:id="@+id/update_profile_pic"
@@ -47,29 +47,30 @@
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_profile_pic"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintVertical_bias="0.036" />
 
     <EditText
         android:id="@+id/update_birthday"
         android:layout_width="271dp"
         android:layout_height="48dp"
-        android:ems="10"
         android:background="@drawable/input_design"
+        android:ems="10"
         android:gravity="center"
         android:hint="Enter your birthday"
         android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_name_txt"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.032" />
 
     <EditText
         android:id="@+id/update_address"
         android:layout_width="267dp"
         android:layout_height="52dp"
-        android:ems="10"
         android:background="@drawable/input_design"
+        android:ems="10"
         android:gravity="center"
         android:hint="Address"
         android:inputType="textPostalAddress"
@@ -77,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_birthday"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <EditText
         android:id="@+id/update_phone"
@@ -93,7 +94,7 @@
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_address"
-        app:layout_constraintVertical_bias="0.159" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <EditText
         android:id="@+id/update_gender"
@@ -110,7 +111,7 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_phone"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.099" />
 
     <Button
         android:id="@+id/update_profile_btn"
@@ -121,10 +122,11 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_gender"
-        app:layout_constraintVertical_bias="0.564" />
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias="0.464" />
 
     <Button
         android:id="@+id/delete_profile_btn"
@@ -138,5 +140,6 @@
         app:layout_constraintHorizontal_bias="0.743"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_gender"
-        app:layout_constraintVertical_bias="0.564" />
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias="0.464" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,11 +10,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.categoryview.Model.Products;
 import com.example.categoryview.ViewHolder.ProductViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
@@ -45,6 +47,7 @@ public class ProductListView extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
     }
 
     @Override
@@ -68,10 +71,9 @@ public class ProductListView extends AppCompatActivity {
                                     Intent intent = new Intent(ProductListView.this, AdminMaintainProducts.class);
                                     intent.putExtra("pid", model.getPid());
                                     startActivity(intent);
-                                }
-                                else{
-                                    Intent intent = new Intent(ProductListView.this,ProductDetailView.class);
-                                    intent.putExtra("pid",model.getPid());
+                                } else {
+                                    Intent intent = new Intent(ProductListView.this, ProductDetailView.class);
+                                    intent.putExtra("pid", model.getPid());
                                     startActivity(intent);
                                 }
 

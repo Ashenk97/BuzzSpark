@@ -46,7 +46,7 @@ public class CategoryDetailedView extends AppCompatActivity {
 
     }
     public void ItemView(View view){
-        Intent intent01 = new Intent(CategoryDetailedView.this,ItemDetailView.class);
+        Intent intent01 = new Intent(CategoryDetailedView.this,ProductListView.class);
         startActivity(intent01);
 
     }

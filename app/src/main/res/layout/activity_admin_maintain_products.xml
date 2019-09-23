@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/product_image_maintain"
-            android:hint="Product Name"
+            android:hint="Product Description"
             android:textAlignment="center"
             android:layout_marginTop="2dp"
             android:background="@drawable/input_design"
@@ -49,12 +49,12 @@
             android:layout_below="@+id/product_name_maintain"
             android:hint="Product Price"
             android:textAlignment="center"
+            android:inputType="number"
             android:background="@drawable/input_design"
             android:textSize="18dp"
             android:padding="12dp"
             android:layout_margin="5dp"
             android:textColor="@color/colorPrimaryDark"
-            android:inputType="number"
             />
 
         <EditText
